@@ -12,7 +12,7 @@ Be concise and factual.
 """
 
 from langchain_ollama import OllamaLLM
-from retriever import Retriever
+from src.retriever import Retriever
 
 
 class RAGPipeline:

@@ -2,7 +2,6 @@
 from sentence_transformers import SentenceTransformer
 import chromadb
 
-
 class Retriever:
     def __init__(self, persist_directory: str = "chroma_db"):
         # Load embedding model
