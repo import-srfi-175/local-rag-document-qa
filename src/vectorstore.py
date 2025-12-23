@@ -9,7 +9,7 @@ class VectorStore:
         # Load embedding model
         self.embedding_model = SentenceTransformer("all-MiniLM-L6-v2")
 
-        # Use PersistentClient (THIS is the key fix)
+        # Use PersistentClient to store embeddings locally instead of in memory
         self.client = chromadb.PersistentClient(
             path=persist_directory
         )
